@@ -14,7 +14,7 @@ import {
   XCircleIcon
 } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 order-2 md:order-1 w-full animate-slide-up">
             <h3 className="font-bold text-lg sm:text-xl text-[var(--foreground)] mb-2">Research-Backed Methodology</h3>
-            <p className="text-[var(--foreground)] mb-4">Each technique in Neurona is grounded in cognitive science and educational psychology. We've analyzed decades of research on learning and memory to create a platform that works with your brain's natural processes.</p>
+            <p className="text-[var(--foreground)] mb-4">Each technique in Neurona is grounded in cognitive science and educational psychology. We&apos;ve analyzed decades of research on learning and memory to create a platform that works with your brain&apos;s natural processes.</p>
             <p className="text-[var(--foreground)] mb-4">Every lecture includes access to detailed research articles explaining the science behind why these techniques are effective, helping you understand not just how to study, but why certain approaches yield better results.</p>
             <button className="bg-[var(--primary)] text-white px-5 py-2 rounded-md font-semibold hover:bg-[var(--primary-dark)] transition-all cursor-pointer hover-lift">Explore Research Articles</button>
           </div>
