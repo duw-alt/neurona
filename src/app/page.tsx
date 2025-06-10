@@ -200,7 +200,7 @@ export default function Home() {
               title: "Pro",
               price: "$9.99",
               period: "/month",
-              yearlyPrice: "or $199.99/year",
+              yearlyPrice: "or $99.99/year",
               features: [
                 "Everything in Premium",
                 "Enhanced adaptive study plan",
