@@ -179,7 +179,7 @@ export default function Home() {
             },
             {
               title: "Premium",
-              price: "$9.99",
+              price: "$4.99",
               period: "/month",
               features: [
                 "Full access to all techniques",
@@ -198,7 +198,7 @@ export default function Home() {
             },
             {
               title: "Pro",
-              price: "$19.99",
+              price: "$9.99",
               period: "/month",
               yearlyPrice: "or $199.99/year",
               features: [
