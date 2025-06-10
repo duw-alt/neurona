@@ -245,7 +245,7 @@ export default function Home() {
       {/* CTA Section */}
       <section ref={ctaRef} className="bg-[var(--primary-light)] py-8 sm:py-12 text-center text-white px-4">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Transform Your Study Habits?</h2>
-        <p className="mb-6">Join thousands of students who have improved their academic performance with Neurona's research-backed techniques.</p>
+        <p className="mb-6">Join thousands of students who have improved their academic performance with Neurona&apos;s research-backed techniques.</p>
         <button className="bg-white text-[var(--primary)] px-6 py-2 rounded-md font-semibold hover:bg-[var(--accent)] transition-all cursor-pointer hover-lift">Start Your Free Trial Today</button>
       </section>
 
