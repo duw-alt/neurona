@@ -47,21 +47,27 @@ export default function Home() {
             <a href="#science" className="hover:text-[var(--primary)] transition-all cursor-pointer">Science</a>
             <a href="#pricing" className="hover:text-[var(--primary)] transition-all cursor-pointer">Pricing</a>
           </nav>
-          <div className="flex gap-2">
-            <button className="border border-[var(--primary)] text-[var(--primary)] px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--accent)] transition-all cursor-pointer">Sign In</button>
-            <button className="bg-[var(--primary)] text-white px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--primary-dark)] transition-all cursor-pointer">Get Started</button>
-            <button className="md:hidden ml-2 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
+          <div className="flex items-center gap-2">
+            <div className="hidden sm:flex gap-2">
+              <button className="border border-[var(--primary)] text-[var(--primary)] px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--accent)] transition-all cursor-pointer">Sign In</button>
+              <button className="bg-[var(--primary)] text-white px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--primary-dark)] transition-all cursor-pointer">Get Started</button>
+            </div>
+            <button className="sm:hidden cursor-pointer" onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
               <svg className="w-7 h-7 text-[var(--primary)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
             </button>
           </div>
         </div>
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 animate-slide-up">
+          <div className="sm:hidden bg-white border-t border-gray-100 px-4 pb-4 animate-slide-up">
             <nav className="flex flex-col gap-2 text-[var(--foreground)] font-medium">
               <a href="#techniques" className="hover:text-[var(--primary)] transition-all cursor-pointer" onClick={() => setMenuOpen(false)}>Techniques</a>
               <a href="#science" className="hover:text-[var(--primary)] transition-all cursor-pointer" onClick={() => setMenuOpen(false)}>Science</a>
               <a href="#pricing" className="hover:text-[var(--primary)] transition-all cursor-pointer" onClick={() => setMenuOpen(false)}>Pricing</a>
+              <div className="flex flex-col gap-2 mt-2 pt-2 border-t border-gray-100">
+                <button className="border border-[var(--primary)] text-[var(--primary)] px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--accent)] transition-all cursor-pointer">Sign In</button>
+                <button className="bg-[var(--primary)] text-white px-4 py-1.5 rounded-md font-semibold hover:bg-[var(--primary-dark)] transition-all cursor-pointer">Get Started</button>
+              </div>
             </nav>
           </div>
         )}
